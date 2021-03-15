@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">SunnyWeather</string>
+    <string name="app_name">Weather</string>
+    <string name="string_edit_hint">输入地址</string>
+    <string name="string_search">搜索</string>
 </resources>

@@ -3,8 +3,11 @@ package com.songjachin.sunnyweather.ui.place
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Transformations
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
 import com.songjachin.sunnyweather.logic.Repository
 import com.songjachin.sunnyweather.logic.model.Place
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
 class PlaceViewModel : ViewModel() {
 

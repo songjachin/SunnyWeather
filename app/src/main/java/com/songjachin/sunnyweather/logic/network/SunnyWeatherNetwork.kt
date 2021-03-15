@@ -9,7 +9,8 @@ import kotlin.coroutines.suspendCoroutine
 
 object SunnyWeatherNetwork {
 
-    private val weatherService = ServiceCreator.create(WeatherService::class.java)
+    private val weatherService = ServiceCreator.create<WeatherService>()
+       // ServiceCreator.create(WeatherService::class.java)
 
     suspend fun getDailyWeather(lng: String, lat: String) = weatherService.getDailyWeather(lng, lat).await()
 

@@ -12,7 +12,7 @@ import kotlin.coroutines.CoroutineContext
 
 object Repository {
 
-    fun searchPlaces(query: String) = fire(Dispatchers.IO) {
+     fun searchPlaces(query: String) = fire(Dispatchers.IO) {
         val placeResponse = SunnyWeatherNetwork.searchPlaces(query)
         if (placeResponse.status == "ok") {
             val places = placeResponse.places
